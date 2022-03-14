@@ -13,11 +13,17 @@
 }
 
 .container {
+    height: 170px;
     max-width: 15rem;
+    overflow-y: scroll;
+    scrollbar-width: none;
     background-color: var(--dark);
     padding: 17px;
     border-radius: 15px;
     box-shadow: rgba(30, 35, 41, 0.5) 0px 10px 30px;
+}
+.container::-webkit-scrollbar{
+    display: none;
 }
 .name,
 .loading-text {
